@@ -1,0 +1,32 @@
+// Name: Pedro Vitor do Carmo Saraiva Teixeira
+// Email: pvdo-carmo-sariava-t@myseneca.ca
+// Student ID: 100036193
+// Workshop 6 && Quiz 5
+
+Workshop 6 Reflection
+
+On this workshop the new concepts that I have applied on the program was vector, list and iterator. Also, I had to use others concepts that I learned on previous workshop such as: lambda expression, throw, try and catch errors handling, string library(erase, substr, find_first_not_of)
+
+The workshop is about add vehicles to the autoshop, categorizing the vehicles by their condition and speed.
+
+The vehicles in this case are just cars, the class Car is derived from Vehicle class. The class Car has three data members: maker, condition and topSpeed.
+The instance of a Car is created by a constructor, which receives a std::istream& type, which means the function will read the information from a file and assign values to the data members based on the file information. For this constructor the delimiter of each token was the ",", so after trim the whitespace between the delimiters, the toke was assigned to the data member. For the condition data member I had to throw an error if the token don't fill the "if" condition. The same happens if the speed member was not a digit. Both condition throw a bool type, that will be catch on the main module, in the loadData function.
+
+The Car class is the base class for the Racecar class. The only difference between a car and a race car is the top speed is multiply by the booster. To create a instance of a Racecar the constructor receive a istream type. First, I use the Car constructor to assign the values to the maker, condition and speed. In order to read the booster, I had to re-read the line, since the car constructor read once. To do that, I used "in.seekg(0, in.beg);". After that, I utilized "temp.find_last_of(',') + 1)" to read the last token, which is the booster token.
+
+The Utilities module has the responsibility to create an instance of a Vehicle, which can be Car or a Racecar. The function receives an istream type and will pass it on if the first token is "c" the function create a dynamic instance of new Car(istream type), if it is "r" create a dynamic instance of new Racecar(istream type). 
+
+The Autoshop class has a collection of type vector that holds vehicles of type Vehicles*. Because the vehicles are pointers they have to be deallocated. This class has a overload operator += function that receives the parameter of type Vehicle* and using ".push_back()" the function push the vehicle parameter to the end of the vehicle collection.
+The Autoshop class also has a template method that receives T type and Vehicle* as arguments types. This function insert the vehicles of the data member collection (vector)vehicles to the argument of type Vehicle* if the T argument returns true.
+
+On the main module the loadData read the file and try create an instance of a Car or Racecar. If the instance is created it will be add to the collection. Otherwise, if the first token grabbed from the file in the createInstance() function the error will be catch by the char token. Also, if there is any error throw from the Car constructor it will be catch by the bool type thrown.
+It would possible to make and if, else if statement to avoid the errors.
+
+On the main function there are two lambdas expressions, one to check the vehicles that have a top speed higher than 300 and another that checks the broken vehicles. Both lambdas receive Vehicle* as the type of the parameter. And if the parameter pass through the condition the function return true otherwise false.
+
+
+
+
+Quiz 5 Reflection
+
+I got 100% on quiz 5.
