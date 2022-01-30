@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B972A06E-573C-44C9-931C-3C98DD87B48B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A20E32D6-E52A-4DB5-BF3E-DFB93C5E5159"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../RecordSet.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "RecordSet::RecordSet(fileName)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A20E32D6-E52A-4DB5-BF3E-DFB93C5E5159 - 215fd379a729706c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sdds::RecordSet::RecordSet(char*)"
+                  moduleName = "ws2-part1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pedrodocarmo/Documents/SENECA/3semestre/Summer2020/OOP345/OOP-Workshops/WS02/part%201/RecordSet.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  uuid = "A20E32D6-E52A-4DB5-BF3E-DFB93C5E5159 - 215fd379a729706c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sdds::RecordSet::RecordSet(char*)"
+                  moduleName = "ws2-part1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pedrodocarmo/Documents/SENECA/3semestre/Summer2020/OOP345/OOP-Workshops/WS02/part%201/RecordSet.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00C13EF8-A1C4-4166-B64F-AED9CCFA27E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../RecordSet.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "RecordSet::RecordSet(fileName)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "218187B6-2DC3-4CD8-AFAD-CA3F20C9C1A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../RecordSet.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "RecordSet::RecordSet(fileName)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
