@@ -1,0 +1,39 @@
+// Name: Pedro Vitor do Carmo Saraiva Teixeira
+// Email: pvdo-carmo-sariava-t@myseneca.ca
+// Student ID: 100036193
+// Workshop 7 && Quiz 6
+
+Workshop 7 Reflection
+
+On workshop 7 I used different STL functions to satisfy the workshop requests.
+The STL functions I used was:
+-std::accumulate() used to sum all the songs lengths in order to return the total length of the collection. I could use for_each function, however I would have more steps, such as create a variable to accumulate the total.
+
+-std::for_each() was used to display each song stored in the collection. I think that was the only option among the STL function that would just display each song, with any other purpose.
+Also, I used for_each() to clean the albums that had "[None]" as name. I tried to use replace_if() first, however I couldn't find a way to clean just the album name, the function always tried to clean the whole song line in the collection.
+
+-std::sort() was the obvious choice to sort the songs by the parameter, which could be "title", "length" and album.
+
+-std::any_of() was used to check if there is songs of the specific artist. To check the songs I was looking for a function that returns a boolean type. The only function that I know returns boolean is all_of(), which wouldn't work in this situation, any_of(), the one that I used and non_of(), which I believe could work, however I would have to invert the boolean after return it from the STL function.
+
+-std::copy_if() was used in the getSongsForArtist(artist) function, passing the songs from the song collections that has the same artist of the parameter to a list artitstSong.
+I used copy_if() instead of copy() because there is a condition which is the name of the artist.
+
+The STL algorithm are better shortcut instead code a whole function. For example, the std::sort() function it is easy to use and saves time. Another way to do the sort it was create a new function that would have 2 variables, and one variable(a) would loop inside of the other variable(b) loop, comparing the "a" with the "a" + 1, to check if one is bigger or comes first in the alphabetic order. The code would looks like this:
+
+void sort(int collection, int n) 
+	int a, b;  
+	for (a = 0; a < n-1; a++)      
+	{ 
+  		for (b = 0; b < n-a-1; b++)  
+     	 		if (collection[b] > collection[b+1])  
+           			swap(&collection[b], &collection[b+1]);  
+	}
+
+
+On sort() function I would throw an error if the parameter name wasn't "album", "title" or "length". And it will be cough in the main function.
+
+
+Quiz 6 Reflection
+
+I got full marks on quiz 6

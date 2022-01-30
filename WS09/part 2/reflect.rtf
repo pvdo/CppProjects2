@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 // Name: Pedro Vitor do Carmo Saraiva Teixeira\
+// Email: pvdo-carmo-sariava-t@myseneca.ca\
+// Student ID: 100036193\
+// Workshop 9 && Quiz 8\
+\
+Workshop 9 Reflection\
+\
+On this workshop focus on File stream object(binary access), function template(bind) and threads.\
+\
+First, I had to open the file and use binary access to write in it in the backup() function. The binary access permits to write without conversion, for this particular program it was used to maintain the security of the encrypted data from the file.\
+After, in the restore() function, I had to open the file allocate memory for the \'93text\'94 data member and read from the file to the text. Also, never forget to close the file.\
+\
+The other part of the workshop was to create threads in the code() function. First I used std::bind in the converter(converter,text, key, nbytes, Crypto()), that way the values of the arguments will every be the same. That benefits my code because give the possibility to put converter() function in a thread, preserving the arguments value. Afterwards, I had to do multi-thread the converter() function that means this function will run faster, since the purpose of multi-threading is to make the function run twice at the same time. In order to make this happened I divided the nbytes of the converter function and created two threads to run this function. That way each thread will encrypt/decrypt half of the data.\
+\
+Quiz 8 Reflection\
+\
+On this quiz I had one wrong answer.\
+The question was \'93Which of the following has the lowest execution time?\'94\
+The right answer is sum = std::reduce(std::execution::par, x.begin(), x.end());\
+This is the right answer because the execution of it permits to do it with parallels threads, therefore it is more than one thread running at the same time.}

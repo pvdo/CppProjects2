@@ -1,0 +1,23 @@
+// Name: Pedro Vitor do Carmo Saraiva Teixeira
+// Email: pvdo-carmo-sariava-t@myseneca.ca
+// Student ID: 100036193
+// Workshop 8 && Quiz 7
+
+Workshop 8 Reflection
+
+The focus of this workshop was to see the difference of coding with raw pointers and smart pointers.
+
+First, I created a function of validation that throw an error. That function will be important to see the difference between raw and smart pointer.
+Second, overloading two different operation +=, one for raw pointer parameter, which is void operator+=(T* obj){...}, and another overloading for smart pointer, which is void operator+=(std::unique_ptr<T> obj){...}.
+Afterwards the overloading, I coded two other function, both has the purpose to merge to different List types into another List type. However, one function return a List of raw pointers and the other holds a list of smart pointers. The difference inside of the code is: when create a local variable of Product type, on mergeRaw the variable will be declared and defined as: Product* temp = new Product(desc[i].desc, price[j].price);. While on the mergePointer the variable will be std::unique_ptr<Product> temp(new Product(desc[i].desc, price[j].price));. The other difference in these functions is when adding the variable to the returned list, while on mergeRaw the way to add is priceList += temp;, in the smartRaw is  priceList += std::move(temp); Since, smart pointer cannot be copy assign I had to use std::move that way transfer the ownership to the priceList.
+
+Doing that, the smart pointer is destroyed without need to do it explicitly. On the other hand the raw pointer must be deleted explicitly. The advantage of that is when happened an error before the deletion the raw pointer leave a memory leakage, while the smart pointer doesn't. So, when the Product doesn't pass through the validation function condition the error is thrown and the raw pointer is never deleted.
+
+
+
+Quiz 7 Reflection
+
+On this quiz I made two mistakes.
+The first mistake was on the question "We can assign a literal string to a variable of type char* without any conversion.", which I answered true. But, the char* type should be converted to const char* since the string literal is an unmodifiable lvalue.
+
+The other mistake was on const char* s = "Hello World"; the "s" holds the address of the first char.
